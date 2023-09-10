@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  org_id: MyString
+  integer: MyString
+  pickup_datetime: 2023-09-09 18:25:04
+  address: MyString
+  address2: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
+
+two:
+  user_id: 1
+  org_id: MyString
+  integer: MyString
+  pickup_datetime: 2023-09-09 18:25:04
+  address: MyString
+  address2: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
