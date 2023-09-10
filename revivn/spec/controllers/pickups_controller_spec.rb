@@ -6,6 +6,7 @@ RSpec.describe PickupsController, type: :controller do
     let(:org) { Org.create(name: "test") }
     let(:user) { User.create(first_name: "test", last_name: "person", org: org) }
     let(:hardware) { HardwareType.create(name: "laptops/desktops") }
+    let!(:pickup_status) { PickupStatus.create(name: "requested") }
 
     context "with valid parameters" do
       it "creates a new pickup" do
