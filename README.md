@@ -38,4 +38,4 @@ Running Tests
 
 1. Navigate to `revivn` folder
 2. Run `bundle install` to install rspec
-3. Run `rspec` to run tests
+3. Run `REVIVN_POSTGRES_HOST=localhost bundle exec rspec` to run tests
