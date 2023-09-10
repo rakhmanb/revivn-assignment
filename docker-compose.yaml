@@ -1,0 +1,30 @@
+version: "3"
+services:
+  rails-app:
+    build:
+      context: ./revivn
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - REVIVN_POSTGRES_HOST=db
+  react-app:
+    build:
+      context: ./revivn-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: revivan
+      POSTGRES_PASSWORD: revivanapp1!
+      POSTGRES_DB: revivanapp
+    ports:
+      - "5432:5432"
+volumes:
+  postgres_data:
