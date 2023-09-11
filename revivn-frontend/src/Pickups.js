@@ -75,7 +75,7 @@ export default function Pickups() {
   }
 
   return (
-    <React.Fragment>
+    <div style={{ margin: "10px" }}>
       <Link to="/pickups/new">Add a new Pickup</Link>
       {loading && statusLoading ? (
         <div>"loading"</div>
@@ -110,6 +110,6 @@ export default function Pickups() {
           </Table>
         </TableContainer>
       )}
-    </React.Fragment>
+    </div>
   );
 }
